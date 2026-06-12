@@ -1,0 +1,21 @@
+{
+  "name": "shidoan-sakusei",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "中学校数学科 学習指導案作成サポート（React + Vite）",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html><html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word'><head><meta charset="utf-8"><title>学習指導案</title><style>
+    @page { size: A4 portrait; margin: 20mm 18mm; }
+    body { font-family: "Yu Mincho","MS Mincho",serif; font-size: 10.5pt; line-height: 1.9; color:#000; }
+    p { margin: 0 0 6pt; }
+    .title { text-align:center; font-size:15pt; font-weight:bold; letter-spacing:2pt; margin-bottom:10pt; }
+    .h { font-weight:bold; font-size:11pt; margin-top:8pt; border-bottom:1px solid #000; }
+    .b { margin-left:1em; }
+    .bi { margin-left:1.5em; text-indent:1em; }
+    .sub { font-weight:bold; margin-left:1em; }
+    .board { margin-left:1em; border:1px solid #888; padding:6pt; }
+    table.meta { font-size:10pt; margin-bottom:8pt; }
+    table.meta td { padding:0 8pt 0 0; border:none; }
+    .metak { color:#333; white-space:nowrap; }
+    table.grid { border-collapse:collapse; margin:4pt 0 10pt; }
+    table.grid th, table.grid td { border:1px solid #000; padding:4pt 6pt; vertical-align:top; font-size:10pt; }
+    table.grid th { background:#eee; text-align:center; font-weight:bold; }
+    td.phase { text-align:center; font-weight:bold; background:#f6f6f6; }
+  </style></head><body><p class=title>第1年　数学科　学習指導案</p>
+<table class=meta align=right><tr><td class=metak>日　　時</td><td>令和8年6月10日（水）第3校時</td></tr><tr><td class=metak>場　　所</td><td>1年2組教室</td></tr><tr><td class=metak>学　　級</td><td>32名</td></tr><tr><td class=metak>学　　校</td><td>〇〇市立△△中学校</td></tr><tr><td class=metak>授 業 者</td><td>山田 太郎</td></tr></table><div style='clear:both'></div>
+<p class=h>1　単元名</p><p class=b>正負の数　（A 数と式）</p>
+<p class=h>2　単元の目標</p><p class=b>正の数と負の数の必要性と意味を理解し、正負の数の四則計算を正確に行うことができるようにする。</p>
+<p class=h>3　単元について</p>
+<p class=sub>(1) 単元観（教材観）</p><p class=bi>本単元は、数学的な見方・考え方を働かせて課題を解決する力を育てる上で重要な単元である。既習の知識や方法と関連づけることで、新しい概念や手順の意味を深く理解させることができる教材である。</p>
+<p class=sub>(2) 生徒観</p><p class=bi>学習意欲は高く、課題に対して粘り強く取り組もうとする生徒が多い。自分の考えをもつことはできるが、根拠を明確にして説明することを苦手とする生徒が多い。</p>
+<p class=sub>(3) 指導観</p><p class=bi>自力解決の時間を十分に確保した上で、ペア・グループでの交流を通して考えを深めさせる。誤答やつまずきを肯定的に取り上げ、考えを深める手がかりとして生かす。</p>
+<p class=h>4　本時の位置</p><p class=b>全18時間扱い　本時は第5時（50分）</p>
+<p class=h>5　本時の目標</p><p class=b>・既習事項と関連づけながら、正負の数の減法の解き方や考え方を見いだすことができる。</p>
+<p class=h>6　本時で扱う問題・例題</p><p class=b>・減法 (+3)−(−2) を加法に直して計算する</p><p class=b>・四則混合 −3+(−4)×2 を計算する</p>
+<p class=h>7　本時の評価規準</p>
+<table class=grid width="100%"><tr><th width="33%">知識・技能</th><th width="33%">思考・判断・表現</th><th width="34%">主体的に学習に取り組む態度</th></tr><tr><td>正負の数の減法の意味や性質を理解している。</td><td>既習事項を活用して、課題解決の見通しをもつことができる。</td><td>正負の数の減法の学習に粘り強く取り組み、解決しようとしている。</td></tr></table>
+<p class=h>8　準備物</p><p class=b>教科書p.28、ワークシート、数直線図　／　ICT活用（タブレット・電子黒板等）</p>
+<p class=h>9　本時の展開</p>
+<table class=grid width="100%"><tr><th width="48">段階</th><th>学習活動</th><th>主な発問</th><th>指導上の留意点</th><th>評価（観点・方法）</th></tr><tr><td class=phase>導入<br>（10分）</td><td>・本時の課題（問題）を提示する<br>・本時のめあてを板書・確認する</td><td>・これまでの方法で解けるだろうか？</td><td>・めあてを生徒自身の言葉で確認させる。</td><td>―</td></tr><tr><td class=phase>展開<br>（30分）</td><td>・個人で考える時間を確保する（自力解決）<br>・グループで話し合い、解法をまとめる<br>・全体で解法を発表・比較する</td><td>・どうしてそう考えたのか説明できるかな？<br>・ほかの考え方はないだろうか？</td><td>・机間指導で個別に支援する。</td><td>・【思】根拠を明確にして考えを説明している。（ノート・発表）</td></tr><tr><td class=phase>まとめ<br>（10分）</td><td>・本時のまとめを板書・確認する<br>・振り返りシートに記入する</td><td>・今日わかったことは何かな？</td><td>・肯定的なフィードバックを行う。</td><td>・【態】学習を振り返り次に生かそうとしている。（振り返りシート）</td></tr></table>
+<p class=h>10　予想されるつまずき・誤答と手立て</p><p class=b>・(+3)−(−2)=+1 とひく数の符号処理を誤る → 符号を変えて加法に直す途中式を必ず書かせる</p><p class=b>・異符号の混同が見られる生徒には数直線を併用する。</p>
+<p class=h>11　板書計画</p><p class=board>左：課題提示・本時のめあて／中央：生徒の考え・解法の比較／右：本時のまとめ</p></body></html>
