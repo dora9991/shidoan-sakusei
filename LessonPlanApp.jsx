@@ -237,6 +237,50 @@ const UNIT_BANK = {
 };
 
 // =====================
+// 個別最適な学び・特別な配慮 文例（汎用）
+//   つまずきやすい生徒／早く終わる生徒／学習形態や環境面の配慮を1セクションに
+// =====================
+const SUPPORT_TEMPLATES = [
+  "読み取りや立式が苦手な生徒には、数直線・図・具体物を併用し、視覚的に考えられるようにする。",
+  "計算につまずきやすい生徒には、途中式を書く欄を用意したワークシートを配付し、手順を可視化する。",
+  "考えが書き出せない生徒には、ヒントカード（着目点・既習事項）を段階的に提示する。",
+  "早く解き終わった生徒には、発展問題や別解を考える課題を用意し、学びを深められるようにする。",
+  "説明が苦手な生徒には、まずペアで言葉にする場を設け、全体発表につなげる。",
+  "学習に不安のある生徒には、机間指導で早めに声をかけ、できている点を認めて自信をもたせる。",
+  "タブレット等のICTを活用し、図やグラフを操作しながら理解できるようにする。",
+  "板書やワークシートの文字の大きさ・色に配慮し、誰もが見やすいようにする。",
+  "グループ編成は、互いの考えを引き出し合えるよう意図的に構成する。",
+];
+
+// =====================
+// 単元計画（全○時の各時テーマ）標準配当：本時の位置づけの根拠に
+// =====================
+const UNIT_PLAN = {
+  "正負の数": ["正負の数の意味と数直線", "大小関係と絶対値", "加法", "減法", "加減の混合計算", "乗法", "除法", "四則の混合計算", "正負の数の利用", "章のまとめ"],
+  "文字と式": ["文字を使った式", "文字式の表し方", "式の値", "一次式の加減", "一次式と数の乗除", "関係を表す式（等式・不等式）", "文字式の利用", "章のまとめ"],
+  "一次方程式": ["方程式とその解", "等式の性質", "方程式の解き方", "いろいろな方程式", "比例式", "一次方程式の利用（文章題）", "章のまとめ"],
+  "比例と反比例": ["関数と変域", "比例の式", "座標と比例のグラフ", "反比例の式", "反比例のグラフ", "比例・反比例の利用", "章のまとめ"],
+  "平面図形": ["直線と角・図形の移動", "基本の作図（垂直二等分線・角の二等分線）", "垂線の作図", "円とおうぎ形", "おうぎ形の弧と面積", "作図の利用", "章のまとめ"],
+  "空間図形": ["いろいろな立体", "直線や平面の位置関係", "面の動き・回転体", "投影図", "立体の表面積", "立体の体積", "球の表面積と体積", "章のまとめ"],
+  "データの活用": ["度数分布表とヒストグラム", "相対度数", "累積度数", "代表値の活用", "近似値と有効数字", "確率の意味（起こりやすさ）", "章のまとめ"],
+  "式の計算": ["単項式と多項式", "多項式の加法・減法", "単項式の乗法・除法", "式の値", "文字式による説明", "等式の変形", "章のまとめ"],
+  "連立方程式": ["連立方程式とその解", "代入法", "加減法", "いろいろな連立方程式", "連立方程式の利用（文章題）", "章のまとめ"],
+  "一次関数": ["一次関数と変化の割合", "一次関数のグラフ", "一次関数の式を求める", "二元一次方程式とグラフ", "一次関数の利用", "章のまとめ"],
+  "平行と合同": ["対頂角・平行線と角", "多角形の内角と外角", "三角形の合同条件", "証明のしくみ", "証明の進め方", "章のまとめ"],
+  "三角形と四角形": ["二等辺三角形の性質", "二等辺三角形になる条件", "直角三角形の合同", "平行四辺形の性質", "平行四辺形になる条件", "特別な平行四辺形", "章のまとめ"],
+  "確率": ["確率の意味と求め方", "樹形図・表を使った確率", "いろいろな確率", "確率の利用", "章のまとめ"],
+  "データの分布（箱ひげ図）": ["四分位数", "箱ひげ図のかき方", "箱ひげ図の読み取り", "データの比較", "章のまとめ"],
+  "多項式（展開と因数分解）": ["多項式と単項式の乗除", "式の展開", "乗法公式", "因数分解（共通因数）", "公式による因数分解", "式の計算の利用", "章のまとめ"],
+  "平方根": ["平方根の意味", "平方根の大小", "根号をふくむ式の乗除", "根号をふくむ式の加減", "分母の有理化", "平方根の利用", "章のまとめ"],
+  "二次方程式": ["二次方程式とその解", "平方根の考えを使った解法", "平方完成による解法", "解の公式", "因数分解による解法", "二次方程式の利用", "章のまとめ"],
+  "関数 y=ax²": ["関数 y=ax² とその特徴", "y=ax² のグラフ", "変化の割合", "変域", "いろいろな事象と関数", "章のまとめ"],
+  "相似な図形": ["相似な図形と相似比", "三角形の相似条件", "平行線と線分の比", "中点連結定理", "相似の利用（縮図・測定）", "面積比・体積比", "章のまとめ"],
+  "円": ["円周角の定理", "円周角の定理の逆", "円周角と弧", "円の性質の利用", "章のまとめ"],
+  "三平方の定理": ["三平方の定理", "三平方の定理の逆", "平面図形への利用", "空間図形への利用", "いろいろな利用", "章のまとめ"],
+  "標本調査": ["全数調査と標本調査", "標本の取り方（無作為抽出）", "標本調査による推定", "標本調査の利用", "章のまとめ"],
+};
+
+// =====================
 // 本時の目標 文例（タイプ別・汎用）
 // =====================
 const GOALS = {
@@ -467,6 +511,85 @@ const EVAL_TEMPLATES = {
 const TIME_OPTIONS = [45, 50];
 const LESSON_NUMS = Array.from({ length: 25 }, (_, i) => String(i + 1));
 
+// =====================
+// 完成見本（中1「正負の数」第4時 減法）：初任者が全体像をつかむためのプリセット
+// =====================
+const SAMPLE_FORM = {
+  grade: "1年", unit: "正負の数", lessonNum: "4",
+  totalLessons: String(UNIT_PLAN["正負の数"].length),
+  useUnitPlan: true, unitPlan: [...UNIT_PLAN["正負の数"]],
+  duration: 50, teacher: "山田 太郎", school: "〇〇市立△△中学校",
+  date: "令和8年6月10日（水）第3校時", classroom: "1年2組教室", studentCount: "32名（男子16名・女子16名）",
+  unitGoal: UNIT_GOALS["正負の数"][0], unitGoalCustom: "",
+  topic: "減法",
+  problems: [UNIT_BANK["正負の数"].problems[1]], problemsCustom: "",
+  mistakes: [UNIT_BANK["正負の数"].mistakes[0], UNIT_BANK["正負の数"].mistakes[1]], mistakesCustom: "",
+  support: [SUPPORT_TEMPLATES[0], SUPPORT_TEMPLATES[3]], supportCustom: "",
+  useUnitView: true, useStudentView: true, useTeachingView: true,
+  unitView: [UNIT_VIEW[4]], studentView: [STUDENT_VIEW[2]], teachingView: [TEACHING_VIEW[1], TEACHING_VIEW[7]],
+  unitViewCustom: "", studentViewCustom: "", teachingViewCustom: "",
+  goalType: "思考活用型", goalText: GOALS["思考活用型"][0], goalCustom: "",
+  introMin: 10, closingMin: 10,
+  columns: ["katsudo", "hatsumon", "hannou", "ryuiten", "hyouka"],
+  cells: {
+    導入: {
+      katsudo: ["前時の内容を復習する（演習問題）", "本時の課題（問題）を提示する", "本時のめあてを板書・確認する"],
+      hatsumon: ["これまでの方法で解けるだろうか？"],
+      hannou: ["既習の方法を思い出そうとする"],
+      ryuiten: ["既習事項との関連を意識させ、見通しをもって取り組めるようにする。"],
+      hyouka: [],
+    },
+    展開: {
+      katsudo: ["個人で考える時間を確保する（自力解決）", "グループで話し合い、解法をまとめる", "全体で解法を発表・比較する"],
+      hatsumon: ["どうしてそう考えたのか説明できるかな？", "いつでも成り立つと言えるかな？"],
+      hannou: ["自分なりの方法で解こうとする", "別の解法を見いだす", "根拠をもって説明しようとする"],
+      ryuiten: ["つまずきが予想される場面では、机間指導で個別に支援する。", "多様な考えを比較・検討し、理解を深めさせる。"],
+      hyouka: ["【思】既習と関連づけて解法を見いだしている。（ノート・観察）"],
+    },
+    まとめ: {
+      katsudo: ["本時のまとめを板書・確認する", "適用問題（確認問題）に取り組む", "振り返りシートに記入する"],
+      hatsumon: ["今日わかったことは何かな？"],
+      hannou: ["自分の言葉でまとめる"],
+      ryuiten: ["本時の学習内容を振り返り、自分の言葉でまとめさせる。"],
+      hyouka: ["【態】学習を振り返り次に生かそうとしている。（振り返りシート）"],
+    },
+  },
+  useQaSets: true,
+  qaSets: {
+    導入: [
+      { q: "ひき算だけど、これまでの方法で解けるだろうか？", r: "「−がふたつでどうする？」「加法に直せそう」", t: "加法のきまりを掲示で想起させ、見通しをもたせる。" },
+    ],
+    展開: [
+      { q: "なぜそうなるのか説明できるかな？", r: "「数直線で+5になる」「−(−2)を+2にした」", t: "机間指導で考えを把握し、数直線と式を関連づけさせる。" },
+      { q: "ひく数の符号を変えれば、いつでも加法に直せるかな？", r: "「ひく数の符号を変えて加えればよい」", t: "複数の例で確かめさせ、きまりを一般化させる。" },
+    ],
+    まとめ: [
+      { q: "減法を計算するには、どうすればよい？", r: "「ひく数の符号を変えて加える」", t: "キーワードでまとめ、適用問題で定着を図る。" },
+    ],
+  },
+  boardPlan: "めあて：減法の計算の仕方を考えよう\n[課題] (+3)−(−2)=?　→　加法に直す／数直線\n[きまり] ひく数の符号を変えて加える　(+3)−(−2)=(+3)+(+2)=+5\n[適用] (−4)−(+6)　(−5)−(−8)",
+  materials: "教科書p.28、ワークシート、数直線図", useICT: true,
+  eval1: EVAL_TEMPLATES.知識技能[1], eval1Custom: "",
+  eval2: EVAL_TEMPLATES.思考判断表現[1], eval2Custom: "",
+  eval3: EVAL_TEMPLATES.主体的態度[0], eval3Custom: "",
+};
+
+// =====================
+// 保存・読み込み（localStorage）
+// =====================
+const LS_KEY = "shidoan_saves_v1";
+function readSaves() { try { return JSON.parse(localStorage.getItem(LS_KEY) || "{}"); } catch { return {}; } }
+function writeSaves(obj) { try { localStorage.setItem(LS_KEY, JSON.stringify(obj)); } catch { alert("保存に失敗しました（ストレージ容量等）。"); } }
+
+// 用語ヘルプ（初任者向けの一言解説）
+const GLOSSARY = {
+  単元観: "その単元（教材）がもつ価値・意義や、既習・次単元とのつながり（系統性）を述べる部分。",
+  生徒観: "生徒の実態。よい面（伸ばしたい力）と課題（つまずき）を分析的に書く部分。",
+  指導観: "単元観・生徒観を受けて、どう指導するか（手立て）を述べる部分。",
+  評価規準: "本時で「どのような姿が見られればよいか」を観点別に示した、評価の“ものさし”。",
+  単元計画: "単元全体を何時間で、各時に何を学ぶかを示した配当。本時の位置づけの根拠になる。",
+};
+
 // =====================================================================
 // メインコンポーネント
 // =====================================================================
@@ -476,7 +599,9 @@ export default function LessonPlanApp() {
     grade: "1年",
     unit: "正負の数",
     lessonNum: "1",
-    totalLessons: "6",
+    totalLessons: String(UNIT_PLAN["正負の数"].length),
+    useUnitPlan: true,
+    unitPlan: [...UNIT_PLAN["正負の数"]],
     duration: 50,
     teacher: "",
     school: "",
@@ -491,6 +616,9 @@ export default function LessonPlanApp() {
     problemsCustom: "",
     mistakes: [],
     mistakesCustom: "",
+    // 個別最適な学び・特別な配慮
+    support: [],
+    supportCustom: "",
     // 単元について（必要な項目だけチェック）
     useUnitView: false,
     useStudentView: false,
@@ -510,6 +638,9 @@ export default function LessonPlanApp() {
     closingMin: 10,
     columns: ["katsudo", "ryuiten"], // 展開表に表示する項目（列）
     cells: { 導入: {}, 展開: {}, まとめ: {} }, // cells[phase][itemId] = [選択肢...]
+    // 発問→予想反応→手立ての対応セット（任意）
+    useQaSets: false,
+    qaSets: { 導入: [], 展開: [], まとめ: [] }, // qaSets[phase] = [{ q, r, t }]
     boardPlan: "",
     materials: "",
     useICT: false,
@@ -541,6 +672,36 @@ export default function LessonPlanApp() {
     if (to < 0 || to >= a.length) return a;
     const [x] = a.splice(from, 1); a.splice(to, 0, x); return a;
   }), [mutateSeq]);
+  // 単元計画（各時テーマ）の編集
+  const setPlanItem = useCallback((idx, val) => setForm(f => { const a = [...f.unitPlan]; a[idx] = val; return { ...f, unitPlan: a }; }), []);
+  const addPlanItem = useCallback(() => setForm(f => ({ ...f, unitPlan: [...f.unitPlan, ""], totalLessons: String(f.unitPlan.length + 1) })), []);
+  const removePlanItem = useCallback((idx) => setForm(f => { const a = f.unitPlan.filter((_, i) => i !== idx); return { ...f, unitPlan: a, totalLessons: String(a.length || 1) }; }), []);
+
+  // 発問→反応→手立て 対応セットの編集
+  const addQa = useCallback((phase) => setForm(f => ({ ...f, qaSets: { ...f.qaSets, [phase]: [...(f.qaSets[phase] || []), { q: "", r: "", t: "" }] } })), []);
+  const setQa = useCallback((phase, idx, key, val) => setForm(f => { const arr = [...(f.qaSets[phase] || [])]; arr[idx] = { ...arr[idx], [key]: val }; return { ...f, qaSets: { ...f.qaSets, [phase]: arr } }; }), []);
+  const removeQa = useCallback((phase, idx) => setForm(f => ({ ...f, qaSets: { ...f.qaSets, [phase]: (f.qaSets[phase] || []).filter((_, i) => i !== idx) } })), []);
+
+  // 保存・読み込み・見本
+  const [savedNames, setSavedNames] = useState(() => Object.keys(readSaves()));
+  const [showLoad, setShowLoad] = useState(false);
+  const doSave = useCallback(() => {
+    const name = window.prompt("保存名を入力してください", `${form.grade} ${form.unit} 第${form.lessonNum}時`);
+    if (!name) return;
+    const all = readSaves(); all[name] = form; writeSaves(all);
+    setSavedNames(Object.keys(all)); alert(`「${name}」を保存しました。`);
+  }, [form]);
+  const doLoad = useCallback((name) => {
+    const all = readSaves();
+    if (all[name]) { setForm(f => ({ ...f, ...all[name] })); setShowLoad(false); setStep(1); }
+  }, []);
+  const doDelete = useCallback((name) => {
+    if (!window.confirm(`保存データ「${name}」を削除しますか？`)) return;
+    const all = readSaves(); delete all[name]; writeSaves(all); setSavedNames(Object.keys(all));
+  }, []);
+  const loadSample = useCallback(() => {
+    if (window.confirm("入力中の内容を「見本（中1 正負の数 第4時 減法）」で置き換えます。よろしいですか？")) { setForm({ ...SAMPLE_FORM }); setStep(1); }
+  }, []);
 
   const unitList = UNITS[form.grade] || [];
   const goalList = GOALS[form.goalType];
@@ -562,6 +723,25 @@ export default function LessonPlanApp() {
     if (mainAuto <= 0) w[3] = "展開の時間が0以下です。導入・まとめの時間を見直してください";
     return w;
   }, [form.unit, mainAuto]);
+
+  // 提出前セルフチェック（プレビュー画面で確認できる達成サイン）
+  const selfChecks = useMemo(() => {
+    const goal = getGoal();
+    const e1 = getEval("eval1", "eval1Custom"), e2 = getEval("eval2", "eval2Custom"), e3 = getEval("eval3", "eval3Custom");
+    const probs = [...form.problems, ...(form.problemsCustom ? [form.problemsCustom] : [])];
+    const mis = [...form.mistakes, ...(form.mistakesCustom ? [form.mistakesCustom] : [])];
+    const flow = ["導入", "展開", "まとめ"].reduce((sum, p) => sum + ITEM_TYPES.reduce((s, it) => s + (form.cells[p]?.[it.id]?.length || 0), 0), 0);
+    const placeholders = [goal, e1, e2, e3].some(s => /〇〇/.test(s || ""));
+    return [
+      { ok: !!goal, label: "本時の目標を設定した" },
+      { ok: !!(e1 && e2 && e3), label: "評価規準を3観点とも記入した" },
+      { ok: probs.length > 0, label: "本時で扱う問題・例題を入れた" },
+      { ok: mis.length > 0, label: "予想されるつまずき・誤答を入れた" },
+      { ok: flow >= 3, label: "本時の展開に十分な活動を組んだ" },
+      { ok: mainAuto > 0, label: "時間配分が成立している（展開＞0分）" },
+      { ok: !placeholders, label: "「〇〇」未置換が残っていない", warnOnly: true },
+    ];
+  }, [form, mainAuto]);
 
   return (
     <div style={S.app}>
@@ -604,12 +784,30 @@ export default function LessonPlanApp() {
         {/* ====================== STEP 1 基本情報 ====================== */}
         {step === 1 && (
           <Card title="📚 基本情報">
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 16, alignItems: "center" }}>
+              <button onClick={loadSample} style={{ ...S.btn, padding: "8px 14px", fontSize: 12, background: "linear-gradient(135deg, #6b2fae, #9b59b6)" }}>📖 見本を読み込む</button>
+              <button onClick={doSave} style={{ ...S.btn, padding: "8px 14px", fontSize: 12, background: "rgba(255,255,255,0.06)", border: "1px solid #2a3a4a", color: "#cdd" }}>💾 この内容を保存</button>
+              <div style={{ position: "relative" }}>
+                <button onClick={() => { setSavedNames(Object.keys(readSaves())); setShowLoad(s => !s); }} style={{ ...S.btn, padding: "8px 14px", fontSize: 12, background: "rgba(255,255,255,0.06)", border: "1px solid #2a3a4a", color: "#cdd" }}>📂 保存データを開く（{savedNames.length}）</button>
+                {showLoad && (
+                  <div style={{ position: "absolute", top: "110%", left: 0, zIndex: 20, background: "#16242f", border: "1px solid #2a3a4a", borderRadius: 8, padding: 8, minWidth: 240, boxShadow: "0 8px 24px rgba(0,0,0,0.4)" }}>
+                    {savedNames.length === 0 && <div style={{ fontSize: 12, color: "#8aa", padding: 6 }}>保存データはありません。</div>}
+                    {savedNames.map(name => (
+                      <div key={name} style={{ display: "flex", alignItems: "center", gap: 6, padding: "4px 2px" }}>
+                        <button onClick={() => doLoad(name)} style={{ flex: 1, textAlign: "left", background: "none", border: "none", color: "#cde", fontSize: 12.5, cursor: "pointer", padding: "4px 6px" }}>{name}</button>
+                        <button onClick={() => doDelete(name)} title="削除" style={{ ...S.seqBtn, color: "#e07a7a" }}>✕</button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
             <Row label="学年">
               <ToggleGroup options={GRADES} value={form.grade}
-                onChange={v => { update("grade", v); update("unit", UNITS[v][0]); update("unitGoal", ""); update("problems", []); update("mistakes", []); }} />
+                onChange={v => { const nu = UNITS[v][0]; const plan = UNIT_PLAN[nu] || []; update("grade", v); update("unit", nu); update("unitGoal", ""); update("problems", []); update("mistakes", []); update("unitPlan", [...plan]); update("totalLessons", String(plan.length || form.totalLessons)); update("lessonNum", "1"); }} />
             </Row>
             <Row label="単元名">
-              <Select options={unitList} value={form.unit} onChange={v => { update("unit", v); update("unitGoal", ""); update("problems", []); update("mistakes", []); }} />
+              <Select options={unitList} value={form.unit} onChange={v => { const plan = UNIT_PLAN[v] || []; update("unit", v); update("unitGoal", ""); update("problems", []); update("mistakes", []); update("unitPlan", [...plan]); update("totalLessons", String(plan.length || form.totalLessons)); update("lessonNum", "1"); }} />
               {form.unit && <div style={S.tag}>{UNIT_DOMAIN[form.unit]}</div>}
             </Row>
             <Row label="「〇〇」に入れる語句">
@@ -632,6 +830,31 @@ export default function LessonPlanApp() {
               <ToggleGroup options={TIME_OPTIONS.map(t => `${t}分`)} value={`${form.duration}分`}
                 onChange={v => update("duration", parseInt(v))} />
             </Row>
+
+            <Divider />
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
+              <SectionTitle>🗂 単元計画（全{form.unitPlan.length}時間の各時テーマ）<HelpTip text={GLOSSARY.単元計画} /></SectionTitle>
+              <label style={{ ...S.checkLabel, fontSize: 12, color: "#9fb4c0" }}>
+                <input type="checkbox" checked={form.useUnitPlan} onChange={e => update("useUnitPlan", e.target.checked)} />
+                指導案に載せる
+              </label>
+            </div>
+            <Hint>各時の主な学習内容です。本時（第{form.lessonNum}時）が自動でハイライトされます。「第○時」をクリックすると本時を切り替えられます。学校の進度に合わせて編集してください。</Hint>
+            {form.useUnitPlan && (
+              <div style={{ display: "flex", flexDirection: "column", gap: 5, marginBottom: 8 }}>
+                {form.unitPlan.map((t, i) => {
+                  const isHon = String(i + 1) === String(form.lessonNum);
+                  return (
+                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 8, padding: "5px 8px", borderRadius: 7, border: isHon ? "1px solid #3d7ab5" : "1px solid #2a3a4a", background: isHon ? "rgba(61,122,181,0.18)" : "rgba(255,255,255,0.03)" }}>
+                      <button onClick={() => update("lessonNum", String(i + 1))} title="本時に設定" style={{ background: "none", border: "none", color: isHon ? "#9fd0ec" : "#7a8a96", fontWeight: 700, fontSize: 12, cursor: "pointer", minWidth: 52, whiteSpace: "nowrap" }}>第{i + 1}時{isHon ? "▶" : ""}</button>
+                      <input type="text" value={t} onChange={e => setPlanItem(i, e.target.value)} placeholder="この時の学習内容" style={{ ...S.input, padding: "4px 8px", fontSize: 12.5 }} />
+                      <button onClick={() => removePlanItem(i)} title="削除" style={{ ...S.seqBtn, color: "#e07a7a" }}>✕</button>
+                    </div>
+                  );
+                })}
+                <button onClick={addPlanItem} style={{ ...S.btn, background: "rgba(255,255,255,0.06)", border: "1px dashed #2a3a4a", color: "#9aa", padding: "7px 14px", fontSize: 12, alignSelf: "flex-start" }}>＋ 時を追加</button>
+              </div>
+            )}
 
             <Divider />
             <SectionTitle>🏫 実施情報（任意）</SectionTitle>
@@ -657,21 +880,21 @@ export default function LessonPlanApp() {
             <Hint>記載が必要な項目にチェックを入れると、文例が表示されます。当てはまるものを選び（複数可）、必要に応じて自由記述で具体化してください。「教材観→生徒観→指導観」の順が一般的です。</Hint>
 
             <ViewSection
-              title="単元観（教材観）" color="#3498db"
+              title="単元観（教材観）" color="#3498db" help={GLOSSARY.単元観}
               desc="単元・教材の価値や意義、系統性、つまずきやすい点など"
               enabled={form.useUnitView} onToggleEnabled={() => update("useUnitView", !form.useUnitView)}
               templates={UNIT_VIEW} selected={form.unitView} onToggle={v => toggleArr("unitView", v)}
               custom={form.unitViewCustom} onCustom={v => update("unitViewCustom", v)} />
 
             <ViewSection
-              title="生徒観" color="#e67e22"
+              title="生徒観" color="#e67e22" help={GLOSSARY.生徒観}
               desc="生徒の実態。よい面（伸ばしたい力）と課題を分析的に"
               enabled={form.useStudentView} onToggleEnabled={() => update("useStudentView", !form.useStudentView)}
               templates={STUDENT_VIEW} selected={form.studentView} onToggle={v => toggleArr("studentView", v)}
               custom={form.studentViewCustom} onCustom={v => update("studentViewCustom", v)} />
 
             <ViewSection
-              title="指導観" color="#2ecc71"
+              title="指導観" color="#2ecc71" help={GLOSSARY.指導観}
               desc="単元観・生徒観を受けた、具体的な指導の手だて"
               enabled={form.useTeachingView} onToggleEnabled={() => update("useTeachingView", !form.useTeachingView)}
               templates={TEACHING_VIEW} selected={form.teachingView} onToggle={v => toggleArr("teachingView", v)}
@@ -756,6 +979,41 @@ export default function LessonPlanApp() {
             })}
 
             <Divider />
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
+              <SectionTitle>🔗 発問→予想反応→手立て（対応セット・任意）<HelpTip text="1つの発問に、予想される生徒の反応と教師の手立てをひもづけて書く機能。授業の『筋』が縦に対応します。" /></SectionTitle>
+              <label style={{ ...S.checkLabel, fontSize: 12, color: "#9fb4c0" }}>
+                <input type="checkbox" checked={form.useQaSets} onChange={e => update("useQaSets", e.target.checked)} />
+                指導案に載せる
+              </label>
+            </div>
+            <Hint>「発問」「予想される生徒の反応」「教師の手立て」を1セットで書けます。指導案では3列が縦に対応した表になり、発問と反応・支援の対応が明確になります。各段階ごとに必要な数だけ追加してください。</Hint>
+            {form.useQaSets && PHASES.map(phase => {
+              const color = phase === "導入" ? "#e74c3c" : phase === "まとめ" ? "#9b59b6" : "#2ecc71";
+              const rows = form.qaSets[phase] || [];
+              return (
+                <div key={phase} style={{ marginBottom: 16, border: `1px solid ${color}33`, borderRadius: 10, padding: 12, background: `${color}08` }}>
+                  <datalist id={`dl-q-${phase}`}>{(ITEM_OPTIONS.hatsumon[phase] || []).map(o => <option key={o} value={o} />)}</datalist>
+                  <datalist id={`dl-r-${phase}`}>{(ITEM_OPTIONS.hannou[phase] || []).map(o => <option key={o} value={o} />)}</datalist>
+                  <datalist id={`dl-t-${phase}`}>{(ITEM_OPTIONS.tedate[phase] || []).map(o => <option key={o} value={o} />)}</datalist>
+                  <div style={{ fontSize: 13, fontWeight: 700, color, marginBottom: 8 }}>{phase}</div>
+                  {rows.length === 0 && <div style={{ fontSize: 11.5, color: "#778", marginBottom: 8 }}>まだ発問セットがありません。下のボタンで追加してください。</div>}
+                  {rows.map((row, idx) => (
+                    <div key={idx} style={{ display: "flex", gap: 6, alignItems: "flex-start", marginBottom: 6 }}>
+                      <span style={{ fontSize: 10, color, fontWeight: 700, minWidth: 16, paddingTop: 8 }}>{idx + 1}</span>
+                      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 4 }}>
+                        <input list={`dl-q-${phase}`} value={row.q} onChange={e => setQa(phase, idx, "q", e.target.value)} placeholder="主な発問" style={{ ...S.input, padding: "5px 8px", fontSize: 12.5 }} />
+                        <input list={`dl-r-${phase}`} value={row.r} onChange={e => setQa(phase, idx, "r", e.target.value)} placeholder="予想される生徒の反応" style={{ ...S.input, padding: "5px 8px", fontSize: 12.5 }} />
+                        <input list={`dl-t-${phase}`} value={row.t} onChange={e => setQa(phase, idx, "t", e.target.value)} placeholder="教師の手立て・支援" style={{ ...S.input, padding: "5px 8px", fontSize: 12.5 }} />
+                      </div>
+                      <button onClick={() => removeQa(phase, idx)} title="削除" style={{ ...S.seqBtn, color: "#e07a7a", marginTop: 6 }}>✕</button>
+                    </div>
+                  ))}
+                  <button onClick={() => addQa(phase)} style={{ ...S.btn, background: "rgba(255,255,255,0.06)", border: `1px dashed ${color}66`, color: "#cdd", padding: "6px 12px", fontSize: 12 }}>＋ {phase}に発問セットを追加</button>
+                </div>
+              );
+            })}
+
+            <Divider />
             <SectionTitle>🧮 本時で扱う問題・例題（{form.unit}）</SectionTitle>
             <Hint>この単元でよく扱う問題例です。選ぶと指導案に「本時で扱う問題」として載ります。自由記述で追記もできます。</Hint>
             <BankPicker options={UNIT_BANK[form.unit]?.problems || []} selected={form.problems}
@@ -770,6 +1028,14 @@ export default function LessonPlanApp() {
               onToggle={v => toggleArr("mistakes", v)} color="#e67e22"
               custom={form.mistakesCustom} onCustom={v => update("mistakesCustom", v)}
               emptyNote="この単元の誤答例は準備中です。自由記述をご利用ください。" />
+
+            <Divider />
+            <SectionTitle>🤝 個別最適な学び・特別な配慮（任意）</SectionTitle>
+            <Hint>つまずきやすい生徒・早く終わる生徒・学習形態など、このクラスの実態に合う配慮を選んでください。指導案に専用欄として載り、一般論になりがちな部分を補強できます。</Hint>
+            <BankPicker options={SUPPORT_TEMPLATES} selected={form.support}
+              onToggle={v => toggleArr("support", v)} color="#1abc9c"
+              custom={form.supportCustom} onCustom={v => update("supportCustom", v)}
+              emptyNote="" />
 
             <Divider />
             <SectionTitle>🧰 準備物・教材（任意）</SectionTitle>
@@ -798,7 +1064,7 @@ export default function LessonPlanApp() {
         {/* ====================== STEP 4 評価規準 ====================== */}
         {step === 4 && (
           <Card title="📊 本時の評価規準（観点別3観点）">
-            <Hint>各観点について、本時で見取る評価規準を1つ選ぶか、自由入力で記述してください。「〇〇」は単元名に置き換えると具体的になります。</Hint>
+            <Hint>各観点について、本時で見取る評価規準を1つ選ぶか、自由入力で記述してください。「〇〇」は単元名（または基本情報の語句）に自動で置き換わります。<HelpTip text={GLOSSARY.評価規準} /></Hint>
             <EvalSection label="① 知識・技能" color="#3498db" templates={EVAL_TEMPLATES.知識技能}
               value={form.eval1} customValue={form.eval1Custom} onChange={v => update("eval1", v)} onCustomChange={v => update("eval1Custom", v)} />
             <EvalSection label="② 思考・判断・表現" color="#e67e22" templates={EVAL_TEMPLATES.思考判断表現}
@@ -816,6 +1082,7 @@ export default function LessonPlanApp() {
         {step === 5 && (
           <div>
             <Card title="📄 学習指導案">
+              <SelfCheckPanel checks={selfChecks} />
               <PreviewDoc form={form} mainAuto={mainAuto} getEval={getEval} getUnitGoal={getUnitGoal} getGoal={getGoal} />
               <Divider />
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
@@ -890,7 +1157,25 @@ function PreviewDoc({ form, mainAuto, getEval, getUnitGoal, getGoal }) {
         );
       })()}
 
-      <InfoBlock label={`${N()}　本時の位置`} value={`全${form.totalLessons}時間扱い　本時は第${form.lessonNum}時（${form.duration}分）`} />
+      <div style={{ marginBottom: 16 }}>
+        <div style={S.docH}>{N()}　本時の位置</div>
+        <div style={{ paddingLeft: 16, lineHeight: 1.9 }}>全{form.totalLessons}時間扱い　本時は第{form.lessonNum}時（{form.duration}分）</div>
+        {form.useUnitPlan && form.unitPlan.some(t => t && t.trim()) && (
+          <table style={{ marginTop: 8, marginLeft: 16, borderCollapse: "collapse", fontSize: 10.5 }}>
+            <tbody>
+              {form.unitPlan.map((t, i) => {
+                const hon = String(i + 1) === String(form.lessonNum);
+                return (
+                  <tr key={i} style={{ background: hon ? "#eef5fb" : "transparent", fontWeight: hon ? 700 : 400 }}>
+                    <td style={{ border: "1px solid #ccc", padding: "3px 10px", whiteSpace: "nowrap" }}>第{i + 1}時{hon ? "（本時）" : ""}</td>
+                    <td style={{ border: "1px solid #ccc", padding: "3px 10px" }}>{t || "―"}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        )}
+      </div>
 
       {/* 本時の目標 */}
       <div style={{ marginBottom: 16 }}>
@@ -972,6 +1257,36 @@ function PreviewDoc({ form, mainAuto, getEval, getUnitGoal, getGoal }) {
         })()}
       </div>
 
+      {/* 発問→反応→手立て 対応表 */}
+      {form.useQaSets && PHASES.some(p => (form.qaSets[p] || []).some(r => r.q || r.r || r.t)) && (
+        <div style={{ marginBottom: 16 }}>
+          <div style={S.docH}>{N()}　発問・予想される生徒の反応と教師の手立て</div>
+          <table style={{ width: "100%", borderCollapse: "collapse", tableLayout: "fixed", wordBreak: "break-word" }}>
+            <thead>
+              <tr>
+                <th style={{ ...th, width: 56 }}>段階</th>
+                <th style={{ ...th, width: "30%" }}>主な発問</th>
+                <th style={{ ...th, width: "35%" }}>予想される生徒の反応</th>
+                <th style={th}>教師の手立て・支援</th>
+              </tr>
+            </thead>
+            <tbody>
+              {PHASES.flatMap(phase => {
+                const qrows = (form.qaSets[phase] || []).filter(r => r.q || r.r || r.t);
+                return qrows.map((r, i) => (
+                  <tr key={phase + i}>
+                    {i === 0 && <td rowSpan={qrows.length} style={{ ...td, textAlign: "center", fontWeight: 700, background: "#f6f6f6" }}>{phase}</td>}
+                    <td style={td}>{r.q || "―"}</td>
+                    <td style={td}>{r.r || "―"}</td>
+                    <td style={td}>{r.t || "―"}</td>
+                  </tr>
+                ));
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+
       {/* 予想されるつまずき・誤答と手立て */}
       {(() => {
         const mis = [...form.mistakes, ...(form.mistakesCustom ? [form.mistakesCustom] : [])];
@@ -980,6 +1295,18 @@ function PreviewDoc({ form, mainAuto, getEval, getUnitGoal, getGoal }) {
           <div style={{ marginBottom: 16 }}>
             <div style={S.docH}>{N()}　予想されるつまずき・誤答と手立て</div>
             <div style={{ paddingLeft: 16 }}>{mis.map((m, i) => <div key={i}>・{m}</div>)}</div>
+          </div>
+        );
+      })()}
+
+      {/* 個別最適な学び・特別な配慮 */}
+      {(() => {
+        const sup = [...form.support, ...(form.supportCustom ? [form.supportCustom] : [])];
+        if (sup.length === 0) return null;
+        return (
+          <div style={{ marginBottom: 16 }}>
+            <div style={S.docH}>{N()}　個別最適な学び・特別な配慮</div>
+            <div style={{ paddingLeft: 16 }}>{sup.map((s, i) => <div key={i}>・{s}</div>)}</div>
           </div>
         );
       })()}
@@ -1017,6 +1344,10 @@ function buildPlainText(form, mainAuto, getEval, getUnitGoal, getGoal) {
     views.forEach((v, i) => { L.push(`(${i + 1}) ${v.label}`); L.push(`　${joinProse(v.items)}`); });
   }
   L.push(`${++n}　本時の位置　全${form.totalLessons}時間扱い　本時は第${form.lessonNum}時（${form.duration}分）`);
+  if (form.useUnitPlan && form.unitPlan.some(t => t && t.trim())) {
+    L.push("　〔単元計画〕");
+    form.unitPlan.forEach((t, i) => L.push(`　　第${i + 1}時${String(i + 1) === String(form.lessonNum) ? "（本時）" : ""}　${t || "―"}`));
+  }
   L.push(`${++n}　本時の目標\n　・${getGoal() || ""}`);
   const probs = [...form.problems, ...(form.problemsCustom ? [form.problemsCustom] : [])];
   if (probs.length) { L.push(`${++n}　本時で扱う問題・例題`); probs.forEach(p => L.push(`　・${p}`)); }
@@ -1034,8 +1365,19 @@ function buildPlainText(form, mainAuto, getEval, getUnitGoal, getGoal) {
       sel.forEach(x => L.push(`　${c.label}：${x}`));
     });
   });
+  if (form.useQaSets && PHASES.some(p => (form.qaSets[p] || []).some(r => r.q || r.r || r.t))) {
+    L.push(`${++n}　発問・予想される生徒の反応と教師の手立て`);
+    PHASES.forEach(phase => {
+      const rows = (form.qaSets[phase] || []).filter(r => r.q || r.r || r.t);
+      if (!rows.length) return;
+      L.push(`【${phase}】`);
+      rows.forEach(r => { L.push(`　発問：${r.q || "―"}`); L.push(`　　予想反応：${r.r || "―"}`); L.push(`　　手立て：${r.t || "―"}`); });
+    });
+  }
   const mis = [...form.mistakes, ...(form.mistakesCustom ? [form.mistakesCustom] : [])];
   if (mis.length) { L.push(`${++n}　予想されるつまずき・誤答と手立て`); mis.forEach(x => L.push(`　・${x}`)); }
+  const sup = [...form.support, ...(form.supportCustom ? [form.supportCustom] : [])];
+  if (sup.length) { L.push(`${++n}　個別最適な学び・特別な配慮`); sup.forEach(x => L.push(`　・${x}`)); }
   if (form.boardPlan) L.push(`${++n}　板書計画\n　${form.boardPlan}`);
   return L.join("\n");
 }
@@ -1064,7 +1406,16 @@ function buildAIPrompt(form, materials) {
     `7. 教科書のページ番号や固有名詞は推測で創作せず、未確定の箇所は「（教科書○ページ／要確認）」と明示すること。`,
     `8. 数学的活動と「主体的・対話的で深い学び」が本時のどこで実現するかを一言添えること。`,
     ``,
-    `【出力形式】 見出し付きの指導案本文（単元名／単元の目標／単元について／本時の位置／本時の目標／本時で扱う問題／評価規準／本時の展開（表）／つまずきと手立て／板書計画）。`,
+    `【出力形式】 見出し付きの指導案本文（単元名／単元の目標／単元について／本時の位置／本時の目標／本時で扱う問題／評価規準／本時の展開（表）／つまずきと手立て／個別最適な学び・特別な配慮／板書計画）。`,
+    ``,
+    `【提出前チェックリスト（本文の最後に付けず、これを満たしてから本文を出力すること）】`,
+    `□ 本時の目標・評価規準・学習活動・評価場面が一本の筋で対応しているか`,
+    `□ 3観点（知識・技能／思考・判断・表現／主体的に取り組む態度）に過不足なく対応しているか`,
+    `□ 「本時で扱う問題」に具体的な数値・式と模範解答があるか`,
+    `□ 予想される誤答それぞれに、教師の具体的な手立てが対応づいているか`,
+    `□ 数値・教科書ページ等を推測で創作していないか（未確定は「要確認」と明示）`,
+    `□ 数学的活動と「主体的・対話的で深い学び」が本時のどこで実現するか書かれているか`,
+    `□ 「〇〇」のような未置換のプレースホルダが残っていないか`,
     ``,
     `【素材】`,
     materials,
@@ -1088,6 +1439,7 @@ function buildWordHtml(form, mainAuto) {
   const cols = ITEM_TYPES.filter(it => form.columns.includes(it.id));
   const probs = [...form.problems, ...(form.problemsCustom ? [form.problemsCustom] : [])];
   const mis = [...form.mistakes, ...(form.mistakesCustom ? [form.mistakesCustom] : [])];
+  const sup = [...form.support, ...(form.supportCustom ? [form.supportCustom] : [])];
   const views = [
     form.useUnitView && { label: "単元観（教材観）", items: [...form.unitView, ...(form.unitViewCustom ? [form.unitViewCustom] : [])] },
     form.useStudentView && { label: "生徒観", items: [...form.studentView, ...(form.studentViewCustom ? [form.studentViewCustom] : [])] },
@@ -1120,6 +1472,13 @@ function buildWordHtml(form, mainAuto) {
   }
 
   parts.push(`<p class=h>${++n}　本時の位置</p><p class=b>全${esc(form.totalLessons)}時間扱い　本時は第${esc(form.lessonNum)}時（${esc(form.duration)}分）</p>`);
+  if (form.useUnitPlan && form.unitPlan.some(t => t && t.trim())) {
+    const prows = form.unitPlan.map((t, i) => {
+      const hon = String(i + 1) === String(form.lessonNum);
+      return `<tr${hon ? " class=honji" : ""}><td class=ptd>第${i + 1}時${hon ? "（本時）" : ""}</td><td class=ptd>${esc(t || "―")}</td></tr>`;
+    }).join("");
+    parts.push(`<table class=plan>${prows}</table>`);
+  }
   parts.push(`<p class=h>${++n}　本時の目標</p><p class=b>・${esc(goal || "")}</p>`);
 
   if (probs.length) parts.push(`<p class=h>${++n}　本時で扱う問題・例題</p>` + probs.map(p => `<p class=b>・${esc(p)}</p>`).join(""));
@@ -1148,7 +1507,19 @@ function buildWordHtml(form, mainAuto) {
     parts.push(`<table class=grid width="100%"><tr>${head}</tr>${rows}</table>`);
   }
 
+  if (form.useQaSets && PHASES.some(p => (form.qaSets[p] || []).some(r => r.q || r.r || r.t))) {
+    parts.push(`<p class=h>${++n}　発問・予想される生徒の反応と教師の手立て</p>`);
+    const body = PHASES.map(phase => {
+      const qrows = (form.qaSets[phase] || []).filter(r => r.q || r.r || r.t);
+      if (!qrows.length) return "";
+      return qrows.map((r, i) => `<tr>${i === 0 ? `<td class=phase rowspan=${qrows.length}>${esc(phase)}</td>` : ""}<td>${esc(r.q || "―")}</td><td>${esc(r.r || "―")}</td><td>${esc(r.t || "―")}</td></tr>`).join("");
+    }).join("");
+    parts.push(`<table class=grid width="100%"><tr><th width="48">段階</th><th width="30%">主な発問</th><th width="35%">予想される生徒の反応</th><th>教師の手立て・支援</th></tr>${body}</table>`);
+  }
+
   if (mis.length) parts.push(`<p class=h>${++n}　予想されるつまずき・誤答と手立て</p>` + mis.map(m => `<p class=b>・${esc(m)}</p>`).join(""));
+
+  if (sup.length) parts.push(`<p class=h>${++n}　個別最適な学び・特別な配慮</p>` + sup.map(s => `<p class=b>・${esc(s)}</p>`).join(""));
 
   if (form.boardPlan) parts.push(`<p class=h>${++n}　板書計画</p><p class=board>${esc(form.boardPlan).replace(/\n/g, "<br>")}</p>`);
 
@@ -1169,6 +1540,9 @@ function buildWordHtml(form, mainAuto) {
     table.grid th, table.grid td { border:1px solid #000; padding:4pt 6pt; vertical-align:top; font-size:10pt; }
     table.grid th { background:#eee; text-align:center; font-weight:bold; }
     td.phase { text-align:center; font-weight:bold; background:#f6f6f6; }
+    table.plan { border-collapse:collapse; margin:2pt 0 10pt 1.5em; }
+    table.plan td.ptd { border:1px solid #888; padding:2pt 10pt; font-size:9.5pt; }
+    table.plan tr.honji { background:#eef5fb; font-weight:bold; }
   `;
   return `﻿<!DOCTYPE html><html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word'>` +
     `<head><meta charset="utf-8"><title>学習指導案</title><style>${styles}</style></head><body>${parts.join("\n")}</body></html>`;
@@ -1274,7 +1648,7 @@ function RadioList({ items, value, onChange, customValue, onCustomChange, radioN
   );
 }
 
-function ViewSection({ title, color, desc, templates, selected, onToggle, enabled, onToggleEnabled, custom, onCustom }) {
+function ViewSection({ title, color, desc, templates, selected, onToggle, enabled, onToggleEnabled, custom, onCustom, help }) {
   return (
     <div style={{ marginBottom: 16, border: `1px solid ${enabled ? color + "55" : "rgba(255,255,255,0.08)"}`, borderRadius: 10, padding: enabled ? 14 : "10px 14px", background: enabled ? `${color}0d` : "transparent", transition: "all 0.15s" }}>
       <label style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}>
@@ -1282,6 +1656,7 @@ function ViewSection({ title, color, desc, templates, selected, onToggle, enable
         <div style={{ width: 4, height: 18, background: enabled ? color : "#445", borderRadius: 2 }} />
         <span style={{ fontSize: 14, fontWeight: 700, color: enabled ? color : "#8aa" }}>{title}</span>
         <span style={{ fontSize: 11, color: "#67737d" }}>を記載する</span>
+        {help && <HelpTip text={help} />}
       </label>
 
       {enabled && (
@@ -1419,6 +1794,31 @@ function EvalSection({ label, color, templates, value, customValue, onChange, on
         {value === "自由入力" && (
           <textarea value={customValue} onChange={e => onCustomChange(e.target.value)} placeholder="評価規準を入力してください" style={{ ...S.textarea, marginTop: 4 }} rows={2} />
         )}
+      </div>
+    </div>
+  );
+}
+
+function HelpTip({ text }) {
+  return <span title={text} style={{ cursor: "help", color: "#7ab3d4", marginLeft: 6, fontSize: 12, userSelect: "none" }}>ⓘ</span>;
+}
+
+function SelfCheckPanel({ checks }) {
+  const done = checks.filter(c => c.ok).length;
+  const total = checks.length;
+  const allOk = done === total;
+  return (
+    <div style={{ marginBottom: 16, border: `1px solid ${allOk ? "rgba(46,204,113,0.45)" : "rgba(230,160,60,0.4)"}`, borderRadius: 10, padding: "12px 14px", background: allOk ? "rgba(46,204,113,0.08)" : "rgba(230,160,60,0.07)" }}>
+      <div style={{ fontSize: 13, fontWeight: 700, color: allOk ? "#2ecc71" : "#e0a458", marginBottom: 8 }}>
+        {allOk ? "✓ 提出前セルフチェック：すべて満たしています" : `提出前セルフチェック（${done}/${total}）`}
+      </div>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "4px 16px" }}>
+        {checks.map((c, i) => (
+          <div key={i} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12, color: c.ok ? "#bfe9cf" : (c.warnOnly ? "#e0a458" : "#9fb4c0") }}>
+            <span style={{ color: c.ok ? "#2ecc71" : (c.warnOnly ? "#e0a458" : "#6a7b88"), fontWeight: 700 }}>{c.ok ? "✓" : (c.warnOnly ? "！" : "□")}</span>
+            {c.label}
+          </div>
+        ))}
       </div>
     </div>
   );
