@@ -46,14 +46,13 @@ npm run preview    # ビルド結果をローカル確認
 
 ```
 shidoan-sakusei/
-├─ index.html            # エントリ HTML
-├─ main.jsx              # React マウント
-├─ LessonPlanApp.jsx     # アプリ本体（単一コンポーネント）
+├─ index.html                              # エントリ HTML
+├─ main.jsx                                # React マウント
+├─ LessonPlanApp.jsx                       # アプリ本体（単一コンポーネント）
 ├─ package.json
 ├─ vite.config.js
-└─ docs/
-   ├─ サンプル指導案.doc                      # 出力サンプル
-   └─ 検証レポート_1年目教員の利用シナリオ.md   # 設計の検討メモ
+├─ サンプル指導案.doc                        # 出力サンプル
+└─ 検証レポート_1年目教員の利用シナリオ.md     # 設計の検討メモ
 ```
 
 ## 技術
